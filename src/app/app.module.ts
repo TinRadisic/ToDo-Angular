@@ -10,9 +10,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './shared/material.module';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
+import { FiltersComponent } from './filters/filters.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, LoginComponent],
+  declarations: [AppComponent, HeaderComponent, LoginComponent, HomeComponent, FiltersComponent],
   imports: [
     BrowserModule,
     CommonModule,

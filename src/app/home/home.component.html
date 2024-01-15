@@ -1,0 +1,12 @@
+<!-- <button mat-raised-button color="primary" (click)="getProducts()">
+  All products
+</button> -->
+<!-- <div *ngFor="let product of products">
+  {{ product.title }}
+</div> -->
+
+<div *ngFor="let product of products$ | async">
+  {{ product.title }}
+</div>
+
+<app-filters (filtersSet)="getFilters($event)"></app-filters>

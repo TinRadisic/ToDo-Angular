@@ -1,0 +1,12 @@
+<form [formGroup]="priceForm" class="price-form">
+  <h5>Price filter:</h5>
+  <mat-form-field>
+    <mat-label>Min</mat-label>
+    <input formControlName="minPrice" matInput type="number" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Max</mat-label>
+    <input formControlName="maxPrice" matInput type="number" />
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="getDataWithFilters()">Get data</button>
+</form>
